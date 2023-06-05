@@ -10,8 +10,7 @@ import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
 
-// Configuration
-
+// CONFIGURATION
 dotenv.config();
 const app = express();
 app.use(express.json());
@@ -22,7 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(cors());
 
-// Routes
+// ROUTES
 
 app.use("/client", clientRoutes);
 app.use("/general", generalRoutes);
