@@ -27,3 +27,6 @@ app.use("/client", clientRoutes);
 app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
+
+// MONGOOSE SETUP
+const PORT = process.env.PORT || 9000;
